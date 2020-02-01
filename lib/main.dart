@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:signup/services/firebase_auth_service.dart';
 import 'package:signup/services/i_auth_service.dart';
+import 'package:signup/widgets/signup_screen/signup_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,14 +16,7 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Welcome to Flutter'),
-          ),
-          body: Center(
-            child: Text('Hello World'),
-          ),
-        ),
+        home: SignupScreen(),
       ),
     );
   }
