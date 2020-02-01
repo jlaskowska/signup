@@ -1,6 +1,6 @@
 # signup
 
-A new Flutter project.
+A Flutter project where the user can signup, login and logout.
 
 ## Getting Started
 
