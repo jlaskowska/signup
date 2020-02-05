@@ -56,7 +56,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   ),
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 4,
                   child: Column(
                     children: <Widget>[
                       Padding(
@@ -88,7 +88,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   ),
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
@@ -137,7 +137,7 @@ class _SigninScreenState extends State<SigninScreen> {
                           ),
                           shape: CircleBorder(),
                           elevation: 2.0,
-                          fillColor: AppColors.purple,
+                          fillColor: store.canSignIn ? AppColors.purple : AppColors.purple.withAlpha(156),
                           padding: const EdgeInsets.all(8.0),
                           constraints: BoxConstraints(
                             minHeight: 75,
