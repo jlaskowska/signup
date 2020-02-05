@@ -17,7 +17,7 @@ abstract class _SignupScreenStore with Store {
     ];
   }
 
-  void dispose() => _disposers.forEach((d) => d());
+  void dispose() => _disposers.forEach((disposer) => disposer());
 
   @observable
   String email = '';
@@ -32,17 +32,7 @@ abstract class _SignupScreenStore with Store {
   String passwordError;
 
   @computed
-  bool get canSubmit {
-    //=> email == '' || password == '' ? false : emailError == null && passwordError == null;
-
-    print('---');
-    print('email: $email');
-    print('password: $password');
-    print('emailError: $emailError');
-    print('passwordError: $passwordError');
-
-    return email == '' || password == '' ? false : emailError == null && passwordError == null;
-  }
+  bool get canSubmit => email == '' || password == '' ? false : emailError == null && passwordError == null;
 
   Future<bool> signup() async => _authService.createUserAccount(email: email, password: password);
 

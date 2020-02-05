@@ -6,6 +6,7 @@ import 'package:signup/services/i_auth_service.dart';
 import 'package:signup/widgets/common/custom_text_field.dart';
 import 'package:signup/widgets/common/error_dialog.dart';
 import 'package:signup/widgets/common/modal_progress_indicator.dart';
+import 'package:signup/widgets/home_screen/home_screen.dart';
 import 'package:signup/widgets/signin_screen/signin_screen_background.dart';
 import 'package:signup/widgets/signin_screen/signin_screen_store.dart';
 
@@ -23,9 +24,7 @@ class _SigninScreenState extends State<SigninScreen> {
   @override
   void didChangeDependencies() {
     if (!isInitialized) {
-      store = SigninScreenStore(
-        Provider.of<IAuthService>(context),
-      );
+      store = SigninScreenStore(Provider.of<IAuthService>(context));
       isInitialized = true;
     }
 
@@ -117,6 +116,11 @@ class _SigninScreenState extends State<SigninScreen> {
 
                                   if (success) {
                                     // route to next page
+                                    Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                        builder: (_) => HomeScreen(),
+                                      ),
+                                    );
                                   } else {
                                     //show error
                                     showDialog(
