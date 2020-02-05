@@ -26,7 +26,7 @@ class _ShapePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     _bottom(canvas, size);
-    _top(canvas, size); // hero animation?
+    _top(canvas, size);
   }
 
   void _top(Canvas canvas, Size size) {
