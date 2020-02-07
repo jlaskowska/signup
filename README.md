@@ -2,15 +2,24 @@
 
 A Flutter project where the user can signup, login and logout.
 
-## Getting Started
+Design inspired by [Sign in / Sign up UI](https://dribbble.com/shots/6371155-Sign-in-Sign-up-UI/attachments/1364174) by [Giga Tamarashvili](https://dribbble.com/Tamarashvili).
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+|                              |                              |                              |
+| -----------------------------| ---------------------------- | ---------------------------- |
+| ![](docs/screenshots/01.png) | ![](docs/screenshots/02.png) | ![](docs/screenshots/03.png) |
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Sequence Diagrams
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](docs/diagrams/01.png)
+
+## Technical Info
+
+- The app consists of three screens: `SignupScreen`, `SigninScreen` and `HomeScreen`.
+- `CustomPainter` is used to draw the background shapes in `SignupScreen` and `SigninScreen`.
+- Adopts coding against interfaces (IAuthService).
+- Firebase is used to authentication users - if you wish to run this app on a device, please create a firebase project and follow the setup instructions.
+- `Provider` is used for dependency injection.
+- `MobX` is used as the project's state management solution.
+    - Use the following command to auto generate code on save: `flutter packages pub run build_runner watch --delete-conflicting-outputs`
