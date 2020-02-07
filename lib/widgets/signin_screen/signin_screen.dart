@@ -86,6 +86,7 @@ class _SigninScreenState extends State<SigninScreen> {
                                   hintText: 'Password',
                                   errorText: store.passwordError,
                                   keyboardType: TextInputType.emailAddress,
+                                  shouldObscureText: true,
                                 ),
                               ),
                             ),
