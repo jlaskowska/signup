@@ -1,5 +1,5 @@
 name: signup
-description: A Flutter project where the user can signup, login and logout.
+description: A Flutter project where the user can signup, signin and signout.
 version: 1.0.0+1
 author: Joanna Laskowska
 

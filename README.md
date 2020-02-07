@@ -1,6 +1,6 @@
 # signup
 
-A Flutter project where the user can signup, login and logout.
+A Flutter project where the user can signup, signin and signout.
 
 Design inspired by [Sign in / Sign up UI](https://dribbble.com/shots/6371155-Sign-in-Sign-up-UI/attachments/1364174) by [Giga Tamarashvili](https://dribbble.com/Tamarashvili).
 
