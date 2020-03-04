@@ -6,9 +6,9 @@ Design inspired by [Sign in / Sign up UI](https://dribbble.com/shots/6371155-Sig
 
 ## Screenshots
 
-|                              |                              |                              |
-| -----------------------------| ---------------------------- | ---------------------------- |
-| ![](docs/screenshots/01.png) | ![](docs/screenshots/02.png) | ![](docs/screenshots/03.png) |
+|                       |                              |                              |                              |
+|-----------------------|------------------------------|------------------------------|------------------------------|
+| ![](docs/gifs/01.gif) | ![](docs/screenshots/01.png) | ![](docs/screenshots/02.png) | ![](docs/screenshots/03.png) |
 
 ## Sequence Diagrams
 
